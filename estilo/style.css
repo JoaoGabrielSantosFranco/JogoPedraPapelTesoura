@@ -19,12 +19,14 @@ body {
   font-size: 32px;
   margin: 40px;
   padding: 20px;
+  line-height:40px;
 }
 
 #placar {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content:center;
+  
 }
 
 #jogador,
@@ -34,6 +36,7 @@ body {
   border-radius: 5px;
   width: 200px;
   color: #fff;
+  
   
 }
 
@@ -49,6 +52,7 @@ body {
   font-size: 25px;
   width: 80px;
   text-align: center;
+ 
 }
 
 #jogadorNome,
@@ -111,4 +115,38 @@ ul#computadorEscolha li a img {
   font-size: 32px;
   margin: 40px;
   padding: 20px;
+  text-align: center;
+}
+
+
+
+
+@media (max-width:640px) {
+  #jogador{
+    width: 400px;
+    height: 120px;
+
+  }
+  #computador{
+    width: 400px;
+    height: 120px;
+
+  }
+  #placar {
+    display: block;
+  }
+  #versus {
+    text-align: center;
+    margin-top: 20px;
+  }
+ 
+  #mensagens {
+    background-color: rgb(235, 235, 240);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 32px;
+    width: 300px;
+    height: 60px;
+   
+  }
 }
